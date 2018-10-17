@@ -18,7 +18,7 @@ pip install ruia-ua
 
 ```python
 from ruia import AttrField, TextField, Item, Spider
-from ruia import middleware
+from ruia_ua import middleware
 
 
 class HackerNewsItem(Item):
