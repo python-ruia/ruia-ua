@@ -1,24 +1,24 @@
-## aspider-ua
+## ruia-ua
 
-simple user-agent middleware for [aspider](https://github.com/howie6879/aspider)
+simple user-agent middleware for [ruia](https://github.com/howie6879/ruia)
 
 ```text
-Notice:  Works on aspider >= 0.0.8
+Notice:  Works on ruia >= 0.0.1
 ```
 
 ### Installation
 
 ```shell
-pip install aspider-ua
+pip install ruia-ua
 ```
 
 ### Usage
 
-`aspider-ua` will be automatically populated with a random `User-Agent` for your request's `headers`
+`ruia-ua` will be automatically populated with a random `User-Agent` for your request's `headers`
 
 ```python
-from aspider import AttrField, TextField, Item, Spider
-from aspider_ua import middleware
+from ruia import AttrField, TextField, Item, Spider
+from ruia import middleware
 
 
 class HackerNewsItem(Item):

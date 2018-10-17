@@ -14,14 +14,14 @@ def read(file_name):
 
 
 setup(
-    name='aspider_ua',
+    name='ruia_ua',
     version='0.0.1',
     author='Howie Hu',
-    description="aspider_ua - simple user-agent middleware for aspider.",
+    description="ruia_ua - simple user-agent middleware for Ruia.",
     long_description=read('README.md'),
     author_email='xiaozizayang@gmail.com',
-    install_requires=['aiofiles', 'aspider>=0.0.8'],
-    url="https://github.com/howie6879/aspider-ua/blob/master/README.md",
+    install_requires=['aiofiles', 'ruia>=0.0.1'],
+    url="https://github.com/howie6879/ruia-ua/blob/master/README.md",
     packages=find_packages(),
     license='MIT',
     classifiers=[
@@ -32,8 +32,8 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     project_urls={
-        'Documentation': 'https://github.com/howie6879/aspider-ua',
-        'Source': 'https://github.com/howie6879/aspider-ua',
+        'Documentation': 'https://github.com/howie6879/ruia-ua',
+        'Source': 'https://github.com/howie6879/ruia-ua',
     },
-    package_data={'aspider_ua': ['*.txt']},
+    package_data={'ruia_ua': ['*.txt']},
 )

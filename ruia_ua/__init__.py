@@ -8,7 +8,7 @@ import random
 
 import aiofiles
 
-from aspider import Middleware
+from ruia import Middleware
 
 __version__ = "0.0.1"
 
