@@ -14,7 +14,7 @@ pip install ruia-ua
 
 ### Usage
 
-`ruia-ua` will be automatically populated with a random `User-Agent` for your request's `headers`
+`ruia-ua` will be automatically with a random `User-Agent` for your request's `headers`
 
 ```python
 from ruia import AttrField, TextField, Item, Spider
