@@ -1,6 +1,6 @@
 ## ruia-ua
 
-simple user-agent middleware for [ruia](https://github.com/howie6879/ruia)
+simple user-agent middleware for [Ruia](https://github.com/howie6879/ruia)
 
 ```text
 Notice:  Works on ruia >= 0.0.1

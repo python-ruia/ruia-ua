@@ -21,7 +21,7 @@ setup(
     long_description=read('README.md'),
     author_email='xiaozizayang@gmail.com',
     install_requires=['aiofiles', 'ruia>=0.0.1'],
-    url="https://github.com/howie6879/ruia-ua/blob/master/README.md",
+    url="https://github.com/ruia-plugins/ruia-ua",
     packages=find_packages(),
     license='MIT',
     classifiers=[
@@ -32,8 +32,8 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     project_urls={
-        'Documentation': 'https://github.com/howie6879/ruia-ua',
-        'Source': 'https://github.com/howie6879/ruia-ua',
+        'Documentation': 'https://github.com/ruia-plugins/ruia-ua',
+        'Source': 'https://github.com/ruia-plugins/ruia-ua',
     },
     package_data={'ruia_ua': ['*.txt']},
 )
