@@ -9,7 +9,7 @@ Notice:  Works on ruia >= 0.0.1
 ### Installation
 
 ```shell
-pip install ruia-ua
+pip install -U ruia-ua
 ```
 
 ### Usage
@@ -26,18 +26,13 @@ class HackerNewsItem(Item):
     title = TextField(css_select='a.storylink')
     url = AttrField(css_select='a.storylink', attr='href')
 
-    async def clean_title(self, value):
-        return value
-
 
 class HackerNewsSpider(Spider):
     start_urls = ['https://news.ycombinator.com/news?p=1', 'https://news.ycombinator.com/news?p=2']
     concurrency = 10
 
-    async def parse(self, res):
-        items = await HackerNewsItem.get_items(html=res.html)
-        for item in items:
-            print(item.title)
+    async def parse(self, response):
+        print(response.html)
 
 
 if __name__ == '__main__':
