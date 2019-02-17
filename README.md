@@ -2,10 +2,6 @@
 
 simple user-agent middleware for [Ruia](https://github.com/howie6879/ruia)
 
-```text
-Notice:  Works on ruia >= 0.0.1
-```
-
 ### Installation
 
 ```shell
@@ -29,9 +25,9 @@ class HackerNewsItem(Item):
 
 class HackerNewsSpider(Spider):
     start_urls = ['https://news.ycombinator.com/news?p=1', 'https://news.ycombinator.com/news?p=2']
-    concurrency = 10
 
     async def parse(self, response):
+        # Do something...
         print(response.html)
 
 

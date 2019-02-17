@@ -5,7 +5,7 @@ url = "https://pypi.python.org/simple"
 
 [packages]
 aiofiles = "*"
-ruia = ">=0.0.1"
+ruia = ">=0.5.1"
 
 [requires]
 python_version = "3.6"

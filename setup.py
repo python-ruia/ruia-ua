@@ -15,13 +15,14 @@ def read(file_name):
 
 setup(
     name='ruia_ua',
-    version='0.0.1',
+    version='0.0.2',
     author='Howie Hu',
     description="ruia_ua - simple user-agent middleware for Ruia.",
     long_description=read('README.md'),
+    long_description_content_type='text/markdown',
     author_email='xiaozizayang@gmail.com',
-    install_requires=['aiofiles', 'ruia>=0.0.1'],
-    url="https://github.com/ruia-plugins/ruia-ua",
+    install_requires=['aiofiles', 'ruia>=0.5.1'],
+    url="https://github.com/python-ruia/ruia-ua",
     packages=find_packages(),
     license='MIT',
     classifiers=[
@@ -32,8 +33,8 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     project_urls={
-        'Documentation': 'https://github.com/ruia-plugins/ruia-ua',
-        'Source': 'https://github.com/ruia-plugins/ruia-ua',
+        'Documentation': 'https://github.com/python-ruia/ruia-ua',
+        'Source': 'https://github.com/python-ruia/ruia-ua',
     },
     package_data={'ruia_ua': ['*.txt']},
 )

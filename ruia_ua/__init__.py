@@ -10,8 +10,6 @@ import aiofiles
 
 from ruia import Middleware
 
-__version__ = "0.0.1"
-
 
 async def get_random_user_agent() -> str:
     """
@@ -43,7 +41,7 @@ middleware = Middleware()
 
 
 @middleware.request
-async def add_random_ua(request):
+async def add_random_ua(spider_ins, request):
     ua = await get_random_user_agent()
     if request.headers:
         request.headers.update({'User-Agent': ua})
