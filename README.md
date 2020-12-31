@@ -28,7 +28,7 @@ class HackerNewsSpider(Spider):
 
     async def parse(self, response):
         # Do something...
-        print(response.html)
+        print(response.url)
 
 
 if __name__ == '__main__':
